@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/amazon.html"
+    },
+    {
+      "source": "/customer-preferences/api/flyout/xop-and-country",
+      "destination": "/mock.json"
+    }
+  ]
+}

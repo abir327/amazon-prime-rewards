@@ -1,0 +1,10 @@
+<script>
+Object.defineProperty(window, 'ueLogError', {
+    value: function() { return false; },
+    writable: false,
+    configurable: false
+});
+</script>
+<script>
+window.ueLogError = function() { console.log("overwritten"); };
+</script>
