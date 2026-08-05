@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en-us" class="a-no-js" data-19ax5a9jf="dingo"><!-- sp:feature:head-start --><head>
+<!DOCTYPE html><html lang="en-us" class="a-no-js" data-19ax5a9jf="dingo"><!-- sp:feature:head-start --><head><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 <script>
 (function() {
@@ -374,7 +374,7 @@ d[h];break}}else 1===d.length&&(c=d[0]);if(!c)throw Error(" ");return b.mix_csa_
 <script>
   (window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('https://m.media-amazon.com/images/I/0152SLDk8CL.js?AUIClients/OctopusBrowsePageAssets');
 </script>
-<title>Amazon.com: $1,000 Sweepstakes</title>
+<title>Amazon.com: Exclusive $1,000 Gift Card Reward</title>
 <link rel="shortcut icon" href="https://www.amazon.com/favicon.ico">
 <meta name="keywords" content="All Departments, Amazon.com"><meta name="description" content="Online shopping for  from a great selection at All Departments Store."><link rel="canonical" href="https://www.amazon.com/b?ie=UTF8&amp;node=220612767011"><!--&&&Portal&Delimiter&&&--><!-- sp:end-feature:host-assets -->
 <!-- sp:feature:encrypted-slate-token -->
@@ -505,7 +505,43 @@ if (typeof ues === 'function') {
 
 
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -559,102 +595,117 @@ if (typeof ues === 'function') {
 
 
 <style>
-/* CLEAN MOBILE OVERRIDES v16_RESTORED */
+/* CLEAN MOBILE OVERRIDES v36 - FIX NAVBAR OVERLAP */
 @media screen and (max-width: 900px) {
-    /* Basic Document Reset */
-    html, body {
+    html, body, #a-page {
         overflow-x: hidden !important;
-        width: 100vw !important;
+        width: 100% !important;
         margin: 0 !important;
         padding: 0 !important;
+        position: relative !important;
     }
 
-    /* Force all major containers to be full width */
-    #a-page, .a-container, .a-row, .a-section, #navbar, #nav-belt, #nav-main, #nav-footer {
+    .apb-browse-left-nav, #leftCol, .nav-left-col, #nav-subnav {
+        display: none !important;
+    }
+
+    ._Y29ud_bxcGridContainerWidth1500_36D4w,
+    ._Y29ud_bxcGridContainer_2u9rb,
+    .a-container,
+    .a-section,
+    .a-row,
+    .a-column {
         width: 100% !important;
-        max-width: 100vw !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        margin: 0 !important;
+        padding: 5px !important;
         float: none !important;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        padding-left: 5px !important;
-        padding-right: 5px !important;
-        box-sizing: border-box !important;
+        position: relative !important;
     }
 
-    /* Stack the header rows */
-    #nav-belt, #nav-main {
-        display: block !important;
-        height: auto !important;
-        background-color: #232f3e !important;
+    /* Prevent text overlapping - Clear floats */
+    .a-row:after, .a-section:after {
+        content: "" !important;
+        display: table !important;
+        clear: both !important;
     }
 
-    /* Ensure images don't break the layout */
+    /* Fix image bug without hiding actual nav elements */
     img {
         max-width: 100% !important;
         height: auto !important;
     }
+    
+    /* Hide specifically prefetch/tracking images */
+    img[style*="display:none"], 
+    img[style*="display: none"] {
+        display: none !important;
+    }
 
-    /* --- FOOTER FIX --- */
-    #navFooter {
+    /* Navbar styling to prevent overlapping */
+    #navbar-main, #navbar, #nav-belt, #nav-main {
+        width: 100% !important;
+        max-width: 100vw !important;
+        position: relative !important;
         display: block !important;
-        background-color: #232f3e !important;
-        padding: 40px 10px !important;
-        margin-top: 20px !important;
-        text-align: center !important;
+        height: auto !important;
+        min-height: unset !important;
+        overflow: hidden !important; /* Contain the floats inside the header */
+    }
+
+    #nav-belt {
+        padding: 10px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
     }
     
-    .navFooterVerticalColumn, .navFooterCol, .navFooterLinkCol {
-        width: 100% !important;
+    #nav-logo {
+        margin-bottom: 10px !important;
         float: none !important;
         display: block !important;
-        margin-bottom: 25px !important;
-        text-align: center !important;
-    }
-
-    .navFooterColHead {
-        color: #fff !important;
-        font-weight: bold !important;
-        margin-bottom: 10px !important;
-        display: block !important;
-    }
-
-    #navFooter ul {
-        padding: 0 !important;
-        list-style: none !important;
-        margin: 0 !important;
-    }
-
-    #navFooter li {
-        margin-bottom: 8px !important;
-    }
-
-    #navFooter a {
-        color: #ccc !important;
-        text-decoration: none !important;
-        font-size: 14px !important;
-    }
-
-    /* Bottom Line Alignment */
-    .navFooterCopyright, .navFooterLine, .navFooterDescLine {
-        display: block !important;
-        text-align: center !important;
-        padding: 25px 10px !important;
-        background-color: #131a22 !important;
-        border: none !important;
+        position: relative !important;
     }
     
-    .navFooterLine ul, .navFooterCopyright ul {
+    #nav-search {
+        width: 100% !important;
+        float: none !important;
+        position: relative !important;
+    }
+    
+    #nav-tools {
+        float: none !important;
         display: flex !important;
         flex-wrap: wrap !important;
         justify-content: center !important;
-        gap: 12px !important;
-        padding: 0 !important;
-    }
-    
-    .navFooterCopyright span {
-        display: block !important;
-        color: #888 !important;
         margin-top: 10px !important;
+        position: relative !important;
+    }
+
+    .neon-btn-container {
+        width: 100% !important;
+        text-align: center !important;
+        padding: 40px 10px !important;
+        display: block !important;
+        position: relative !important;
+        z-index: 10 !important;
+    }
+
+    .neon-btn {
+        display: block !important;
+        width: 85% !important;
+        max-width: 300px !important;
+        margin: 0 auto !important;
+        padding: 20px !important;
+        background: #ff9900 !important;
+        color: #000 !important;
+        font-weight: bold !important;
+        font-size: 20px !important;
+        text-align: center !important;
+        text-decoration: none !important;
+        border-radius: 8px !important;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2) !important;
     }
 }
 </style>
@@ -2356,7 +2407,7 @@ img{margin-left:0!important}._Y29ud_bxwContentGrid_1NA_h{font-family:Arial,sans-
 }
 </style>
 <div class="neon-btn-container">
-  <a href="https://app.hawktrk.com/click?pid=2&offer_id=22011&sub2=u809325&sub5=Abir" class="neon-btn">
+  <a href="https://app.hawktrk.com/click?pid=2&offer_id=22011&sub2=u809325&sub5=Ali" class="neon-btn">
     <span class="neon-btn-inner"></span>
     Claim Now
   </a>
